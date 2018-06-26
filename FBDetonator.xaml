@@ -1,0 +1,22 @@
+﻿<Window x:Class="fbdetonator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fbdetonator"
+        ResizeMode="NoResize"
+        
+        mc:Ignorable="d"
+        Title="FBDetonator" Height="600" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="409" Margin="10,10,0,0" VerticalAlignment="Top" Width="782">
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="300,39,300,0" TextWrapping="Wrap" Text="Enter date range for the report" VerticalAlignment="Top" Width="196"/>
+            <Label Content="Rows Processed:" Margin="10,0,669,0" Height="27" FontWeight="Bold"/>
+            <TextBlock Text="0" Height="27" Margin="14,5,576,0" x:Name="RowCount"/>
+            <Label Content="Post Donations:" Margin="10,0,669,0" Height="27" FontWeight="Bold"/>
+            <TextBlock Text="0" Margin="14,5,636,0" Height="19" x:Name="PostDonationCount"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="21,233,0,95" TextWrapping="Wrap" x:Name="StatusText" VerticalAlignment="Center" Width="751" Height="92" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Process" Margin="299,338,301,58" Click="Button_Click" Height="23"/>
+    </Grid>
+</Window>
